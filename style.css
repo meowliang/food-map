@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'AlexHand';
+  src: url('AlexHand2.otf');
+}
+
+
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  .restaurant-icon {
+
+    max-width: 55px;
+    max-height: 55px;
+
+  }
+
+  .restaurant-desc {
+    
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #263238;
+    display: flex;
+    font-size: 14px;
+    gap: 15px;
+    justify-content: center;
+    padding: 4px;
+    position: relative;
+    transition: all 0.3s ease-out;
+    width: 300px;
+    height: 200px;
+    font-family: 'AlexHand';
+  }
+
+  .restaurant-icon:hover {
+    animation: bounce 2s infinite;
+  }
+
+  .restaurant-icon:visited {
+    opacity: 80%;
+  }
+
+  .number-icon {
+    background: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'AlexHand';
+    width: 24px;
+    height: 24px;
+    border-radius: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+  }
+
+  .number-icon:hover {
+    background: #666;
+  }
+  
+  .restaurant-desc::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #FFFFFF;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 95%;
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease-out;
+    width: 0;
+    z-index: 1;
+  } 
+
+  .restaurant-desc.highlight {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    padding: 8px 15px;
+    width: auto;
+  }
+
+  .restaurant-desc.highlight::after {
+    border-top: 9px solid #FFFFFF;
+  }
+  
+  .restaurant-desc.highlight .details {
+    display: flex;
+  }

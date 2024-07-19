@@ -1,0 +1,480 @@
+[
+
+    {
+        "number": 0,
+        "name": "California Migration Museum",
+        "instagram": "",
+        "tiktok": "",
+        "lat": 37.793899, 
+        "lng": -122.491161,
+        "title": "California Migration Museum",
+        "tagline": "Exploring living stories of migration, one neighboard at a time.",
+        "youtube": " "
+    },
+
+    { 
+
+                    "number": 1, 
+                    "name": "Thanh Long", 
+                    "instagram": "N/A", 
+                    "tiktok": "N/A",
+                    "lat": 37.7602,
+                    "lng": -127.1203,
+                    "title": "Inventing Garlic Noodles",
+                    "tagline": "When Diana An stumbled into a small Italian deli in the 1970s, she realized it was her ticket out of war-torn Vietnam. In this Melting Spots story, her granddaughter Monique tells us about a secret family recipe that fused Italian and Asian cuisine to create a Bay Area classic: garlic noodles.",
+                    "youtube": "https://www.youtube.com/embed/7zfbw1-DEHU?si=q918sV6F1G0WDqNE"
+
+                },
+
+    {
+
+                    "number": 2,
+                    "name": "Wonderful Foods", 
+                    "instagram": "N/A", 
+                    "tiktok": "N/A",
+                    "lat": 37.763,
+                    "lng": -122.479,
+                    "title": "Where the Boba Craze Began",
+                    "tagline": "Bubble tea is everywhere now but 30 years ago, when boba was first introduced to San Francisco at Wonderful Foods, people were hesitant to try a drink you could chew. In this Melting Spots story, we hear about boba’s evolution from Taiwanese snack-store novelty to a San Francisco mainstay.",
+                    "youtube": "https://www.youtube.com/embed/kpmBLSHQZEk?si=xnfZUB_jCdIFwpYF"
+
+                },
+
+    {
+
+                    "number": 3,
+                    "name": "H-Mart", 
+                    "instagram": "@hmartofficial", 
+                    "tiktok": "@hmartofficial",
+                    "lat": 37.710539352545396, 
+                    "lng": -122.46782291469059,
+                    "title": "Korean Imports are Nothing to Cry About",
+                    "tagline": "When San Francisco's first H-Mart opened in 2022, it was a major news event. In this Melting Spots story, journalist Soleil Ho talks about how H-Mart’s arrival changed the City’s Korean food scene, reflects on the impact of the multinational chain on smaller Asian grocers, and shares some of their favorite H-Mart snacks.",
+                    "youtube": "https://www.youtube.com/embed/7zfbw1-DEHU?si=q918sV6F1G0WDqNE"
+
+        },
+
+   {
+
+                    "number": 4, 
+                    "name": "Japanese Tea Garden", 
+                    "instagram": "@japaneseteagardensf", 
+                    "tiktok": "N/A",
+                    "lat": 37.77026937014912, 
+                    "lng": -122.47046808955726,
+                    "title": "The Fortune Cookie's (Surprising) Origins",
+                    "tagline": "The fortune cookie was born in San Francisco—but not in Chinatown. In this Melting Spots story, we hear how it was actually a Japanese immigrant, George Hagiwara, who adapted the sesame crackers he loved for American palates, before Japanese American internment during WWII saw them reinvented as a Chinese American classic.",
+                    "youtube": "https://www.youtube.com/embed/vfIMb2UNh3c?si=LcwA2X2oAkML5k8T"
+
+    },
+
+    {
+
+                    "number": 5, 
+                    "name": "Lavash", 
+                    "instagram": "@lavashsf", 
+                    "tiktok": "N/A",
+                    "lat": 37.7648815520973, 
+                    "lng": -122.46319700794581,
+                    "title": "From Burritos to Home Cooking",
+                    "tagline": "Saeed Talai's first food business in San Francisco was a Mexican taqueria. It was only much later that he turned back to his own roots, opening his beloved Persian restaurant Lavash. In this Melting Spots story, Saeed and his son Kian reflect on how Persian food in California is sometimes better than in Iran — and how cooking it helps connect Iranian Americans to their heritage.",
+                    "youtube": "https://www.youtube.com/embed/iY9SjRwsjWc?si=T1MI669nSfTP3mQ9"
+
+    },
+    {
+        
+                    "number": 6, 
+                    "name": "Mamahuhu", 
+                    "instagram": "@eatmamahuhu", 
+                    "tiktok": "@eatmamahuhu",
+                    "lat": 37.75505635119164, 
+                    "lng": -122.42986858928073,
+                    "title": "A Fresh Take(out) on American Chinese",
+                    "tagline": "Chop suey and egg foo young are served by a million run-of-the-mill takeout restaurants across the U.S. But, for Michelin-starred Chef Brandon Jew, those dishes are the soul of Bay Area Chinese American cuisine, and reflect both the ingenuity of early immigrant chefs here and his own identity.",
+                    "youtube": "https://www.youtube.com/embed/8Mc4pkyRdXM?si=B2qPb8CLtDeTd7_K"
+
+    },
+    {
+        
+                    "number": 7, 
+                    "name": "Cinderella Russian Bakery and Cafe", 
+                    "instagram": "N/A", 
+                    "tiktok": "N/A",
+                    "lat": 37.777636492495894, 
+                    "lng": -122.46358640119624,
+                    "title": "Piroskhis from the Old Country",
+                    "tagline": "When young Mike Fishman immigrated to San Francisco from Moscow in the late 1980s, leaving the Soviet Union was a culture shock. But he found a vibrant Russian community in the Richmond District. At 16 years old, Mike started working at Cinderella Bakery—the oldest Russian bakery in the Bay Area. Today, the cafe’s piroshki, borscht soup, and dark rye bread are still highlights in San Francisco’s 'Little Russia.'",
+                    "youtube": "https://www.youtube.com/embed/dedy-imbNvU?si=P_xud4UO0ZwOB-gl"
+    },
+   {
+        
+                    "number": 8, 
+                    "name": "Mandalay", 
+                    "instagram": "N/A", 
+                    "tiktok": "N/A",
+                    "lat": 37.78548012056313, 
+                    "lng": -122.46431037421243,
+                    "title": "Putting Burma on the (SF) Map",
+                    "tagline": "When Mandalay opened in 1984, few people in the Bay Area had heard of tea leaf salad. In this Melting Spots story, owner Sherry Dung explains how she worked hard to introduce authentic Burmese cuisine to SF’s foodies, and how the restaurant has evolved into an award-winning institution.",
+                    "youtube": "https://www.youtube.com/embed/2O5CN4cz2TE?si=M4yq1MHmsburlsuK"
+    },
+    {
+
+                    "number": 9, 
+                    "name": "Anchor Oyster Bar", 
+                    "instagram": "@anchoroysterbay", 
+                    "tiktok": "N/A",
+                    "lat": 37.75987181312495, 
+                    "lng": -122.43472836072148,
+                    "title": "Cioppino: the Italian Connection",
+                    "tagline": "As a child, Roseann Grimm remembers red sauce simmering on the stove as her grandfather, a fisherman from Amalfi, Italy, started the base for his fish stew: cioppino. In this Melting Spots story, she talks about the dish’s Italian American origins, and explains why it’s still the star of Anchor Oyster Bar’s menu.",
+                    "youtube": "https://www.youtube.com/embed/192yobcp_l8?si=jyzgzD-9wOHeGX0c"
+
+    },
+    {
+
+                    "number": 10, 
+                    "name": "Minnie Bell's Soul Movement", 
+                    "instagram": "@minnie_bells", 
+                    "tiktok": "N/A",
+                    "lat": 37.782276433047514, 
+                    "lng": -122.43212488974885,
+                    "title": "Homecoming: Soul Food in the Fillmore",
+                    "tagline": "Fernay McPherson’s family left the South during the Great Migration, landing in San Francisco’s vibrant Fillmore district, the “Harlem of the West.” But the City’s plans for urban “renewal” in the 1950s pushed Black people and culture out of the neighborhood. Seventy years and three generations later, her restaurant is bringing soul food back to the Fillmore.",
+                    "youtube": "https://www.youtube.com/embed/dSXdhrDR-Ac?si=nawtLrjsAkHQO4HQ"
+
+    },
+    {
+
+                    "number": 11, 
+                    "name": "La Mediterranee", 
+                    "instagram": "@lamedfillmore", 
+                    "tiktok": "N/A",
+                    "lat": 37.79027225049224, 
+                    "lng": -122.43308435568834,
+                    "title": "Better than Rice-a-Roni",
+                    "tagline": "When Levon Der Bedrossian arrived in California, hummus was only for hippies. In this Melting Spots story, Levon and his son Vannick talk about their Lebanese and Armenian heritage, and explain how Rice-a-Roni, “The San Francisco Treat,” is a world away from his grandmother’s rice pilaf.",
+                    "youtube": "https://www.youtube.com/embed/K32ClUOUf6k?si=mvMN8sPXoyhLZllD"
+
+    },
+    {
+
+                    "number": 12, 
+                    "name": "Uji Time", 
+                    "instagram": "@ujitimedessert", 
+                    "tiktok": "N/A",
+                    "lat": 37.78539131716462, 
+                    "lng": -122.42850198637694,
+                    "title": "Mochi, Matcha, and Asian Solidarity",
+                    "tagline": "Fish-shaped taiyaki cones. Mochi-wrapped soft serve. Matcha milkshakes. Uji Time makes Japanese desserts that have become trendy favorites in the City— but would never have made it to the Bay Area without immigrants like Sharon Ku. In this Melting Spots story, she tells us about the changing customer profiles in her Japantown storefront over the years, and how she loves fusing Asian flavors to create something distinctly San Francisco.",
+                    "youtube": "https://www.youtube.com/embed/PU8cvkaM5FA?si=_7e2vqtjqLw0d4Nj"
+
+    },
+    {
+
+                    "number": 13, 
+                    "name": "Beit Rima", 
+                    "instagram": "@beitrima", 
+                    "tiktok": "@beitrima",
+                    "lat": 37.76610499208252, 
+                    "lng": -122.44945072632804,
+                    "title": "Hot Dogs to Harissa",
+                    "tagline": "Samir Mogannam’s first venture into the food industry was a pop-up vegan hot dog cart stand in the Mission. In this Melting Spots story, he reflects on how he went from serving all-American hot dogs to food that reflected his Arab American heritage—representing a food culture that’s often had to hide under the catch-all label “Mediterranean.”",
+                    "youtube": "https://www.youtube.com/embed/p4ea5YRYWo0?si=WR5I_W_Ti1yFK0kD"
+
+    },
+    {
+
+                    "number": 14, 
+                    "name": "Damansara", 
+                    "instagram": "@damansarasf", 
+                    "tiktok": "N/A",
+                    "lat": 37.74262296863544, 
+                    "lng": -122.42547945383754,
+                    "title": "Introducing Malaysia: from Instagram to Noe Valley",
+                    "tagline": "When Tracy Goh moved to San Francisco, she started cooking Malaysian food in her tiny apartment as a way to connect with her new neighbors. In this Melting Spots story she explains how those dinners became an Instagram sensation, and why she’s committed to sharing Malaysian food with her California community.",
+                    "youtube": "https://www.youtube.com/embed/I8lqgpgjPj8?si=i_ZfCGv1rop6KYT1"
+
+    },
+    {
+        
+                    "number": 15, 
+                    "name": "Mitchell's Ice Cream", 
+                    "instagram": "@mitchellsicecreamsanfran", 
+                    "tiktok": "N/A",
+                    "lat": 37.744389148629324, 
+                    "lng": -122.42246903796827,
+                    "title": "Old-School Ice Cream with Exotic Flavor",
+                    "tagline": "Mitchell’s Ice Cream is an old-school San Francisco gem. When it opened in 1953, it sold classic flavors like chocolate and vanilla. In this Melting Spots story, we hear how a decade later, an import broker and a change in U.S. immigration law made mango, ube, and other Filipino flavors  Mitchell’s top sellers.",
+                    "youtube": "https://www.youtube.com/embed/9uVzigy88RY?si=z6HuSBYz-rKmGpQQ"
+                },
+    {
+
+                    "number": 16, 
+                    "name": "Bi-Rite Market", 
+                    "instagram": "@biritesf", 
+                    "tiktok": "N/A",
+                    "lat": 37.7615061274982, 
+                    "lng": -122.42439986680377,
+                    "title": "Reinventing the Arab American Grocery Story",
+                    "tagline": "When Sam Mogannam’s family bought Bi-Rite in 1964, it was just an average corner store: a small business start to an American dream shared by many Arab American immigrant families. In this Melting Spots story, we hear how Sam transformed Bi-Rite into a pioneering farm-to-grocery store, and why an early sense of immigrant community is as relevant to Bi-Rite’s story as ever.",
+                    "youtube": "https://www.youtube.com/embed/QIzWsqccdCA?si=iWh3eUmSPevKA1jt"
+
+    },
+    {
+                    "number": 17, 
+                    "name": "Senor Sisig", 
+                    "instagram": "@senorsisig", 
+                    "tiktok": "@senorsisig",
+                    "lat": 37.757276135061275, 
+                    "lng": -122.42061781673914,
+                    "title": "Filipino Food Truck Fusion",
+                    "tagline": "In 2010, Señor Sisig co-founder Evan Kidera bought a reconditioned Chinese food truck on Craigslist. What came next was culinary alchemy, as California staples like tacos and burritos were combined with classic Filipino recipes like sisig. In this Melting Spots story, Evan shares the history behind the classic dish, and how his food truck helped bring fusion to the forefront in today’s San Francisco.",
+                    "youtube": "https://www.youtube.com/embed/rVfTIspcC9g?si=0HxSNq9_NqN7VoZ3"
+
+    },
+    {
+                    "number": 18, 
+                    "name": "Prubechu", 
+                    "instagram": "@prubechusf", 
+                    "tiktok": "@prubechusf",
+                    "lat": 37.76150580937737, 
+                    "lng": -122.41935868214793,
+                    "title": "A Taste of Guam in the Bay",
+                    "tagline": "When Shawn Camacho arrived from Guam, San Franciscans hadn't heard of dishes like tinatak or kelaguen—but they also didn’t taste completely unfamiliar. In this Melting Spots story, Shawn tells us about Chamorro cuisine’s global influences, and how his restaurant Prubechu is a home away from home for the Bay Area’s Pacific Islanders.",
+                    "youtube": "https://www.youtube.com/embed/OneT3ZUgF3Y?si=kBjk0t8PhD9wsr4p"
+    },
+    {
+
+                    "number": 19, 
+                    "name": "Abanico Coffee Roasters", 
+                    "instagram": "@abanicocoffeeroasters", 
+                    "tiktok": "@abanicocoffeeroasters",
+                    "lat": 37.76307291560516, 
+                    "lng": -122.41911370119696,
+                    "title": "No More Cafe Listo",
+                    "tagline": "When Ana Valle left El Salvador as a child, memories of her grandmother's instant coffee helped to keep her rooted in the heritage she left behind. In this Melting Spots story, she tells us why she believes coffee connects people like nothing else—and why she’ll only serve her Mission community the good stuff.",
+                    "youtube": "https://www.youtube.com/embed/nwgX9vJw0eY?si=K5iVW_DKXWZ88Zo3"
+    },
+    {
+        
+                    "number": 20, 
+                    "name": "Grand Coffee", 
+                    "instagram": "@grandcoffee", 
+                    "tiktok": "N/A",
+                    "lat": 37.75640512231515, 
+                    "lng": 122.4184489342631,
+                    "title": "An Espresso with Ethics",
+                    "tagline": "This is the story of how three friends with Mexican, Palestinian and Korean roots came together to make some of SF's best coffee—and create a new caffeine wave. In this Melting Spots story, co-founders Adrian Lopez and Nabeel Silmi explain how they confront some of the injustices of the coffee trade and its impact on the Mission’s diverse local community.",
+                    "youtube": "https://www.youtube.com/embed/kPNTkqj6y9Q?si=zdIBvvXtHfyhD9sO"
+    },
+    {
+                    "number": 21, 
+                    "name": "Reem's California", 
+                    "instagram": "@reems_kitchen", 
+                    "tiktok": "N/A",
+                    "lat": 37.75072423410334, 
+                    "lng": -122.41795511654153,
+                    "title": "Bread is Politics, Too",
+                    "tagline": "Reem, a Palestinian American and former labor organizer turned baker, knows that her man’oushe couldn’t reach customers without the newly arrived immigrant labor that is the essential backbone of San Francisco food. In this Melting Spots story, she tells us about the transformative power of food—from the inside out.",
+                    "youtube": "https://www.youtube.com/embed/f300HcLX514?si=qRpcuvWdIy3Q-FWs"
+    },
+    {
+                    "number":22, 
+                    "name": "El Faro", 
+                    "instagram": "@elfarosoma", 
+                    "tiktok": "N/A",
+                    "lat": 37.75921407814105, 
+                    "lng": -122.41449261991835,
+                    "title": "The Original Mission Burrito",
+                    "tagline": "Super-size the tortilla; add the rice; pile on the carnitas. No food epitomizes San Francisco more than the Mission Burrito, invented (according to legend) right here at El Faro taquería. In this Melting Spots story, owner Raymunda Ramirez and her daughter tell us why the Mission Burrito resonated in a city where people are constantly on the go.",
+                    "youtube": "https://www.youtube.com/embed/L8K6bUqJUYs?si=bRMC3WIBksXLwT4Q"
+    },
+   {
+                    "number": 23, 
+                    "name": "Dandelion Chocolate", 
+                    "instagram": "@dandelionchocolate", 
+                    "tiktok": "N/A",
+                    "lat": 37.76589451311562, 
+                    "lng": -122.41219769186092,
+                    "title": "SF's Long Chocolate Tradition",
+                    "tagline": "Any chocolate lover today should recognize the names Guittard and Ghirardelli. These Gold Rush-era immigrants to San Francisco were pioneers in American chocolate-making. In this Melting Spots story, Dandelion Chocolate’s Greg D’Alesandre explains the combination of factors that make San Francisco the epicenter of a still-evolving chocolate industry.",
+                    "youtube": "https://www.youtube.com/embed/IaBE0x9rppI?si=xMfOUQfkb4TmFJ-o"
+    },
+     {
+                    "number": 24, 
+                    "name": "D'Maize", 
+                    "instagram": "@dmaizecafe", 
+                    "tiktok": "N/A",
+                    "lat": 37.75313831740492, 
+                    "lng": -122.40756013975151,
+                    "title": "Latinx Legacy in the Mission",
+                    "tagline": "In the 1980s, thousands of Salvadoran refugees rebuilt their lives in San Francisco’s Mission District. In this Melting Spots story, we hear why El Salvador’s stuffed flatbreads—and the pupuserías that sell them—are so important to a San Francisco community trying to hold on to its place in a changing neighborhood.",
+                    "youtube": "https://www.youtube.com/embed/Akfi2KBMpK4?si=qp91gd_lxwmHW5JH"
+    },
+    {
+
+                    "number": 25, 
+                    "name": "Moya", 
+                    "instagram": "@eatmoya", 
+                    "tiktok": "N/A",
+                    "lat": 337.784920949864414, 
+                    "lng": -122.4100564198985,
+                    "title": "Refugees and Tofu Tibsi",
+                    "tagline": "Fana Alemayehu didn’t originally plan to open a restaurant in San Francisco. But when war in Ethiopia brought her to California, she found food was a way to connect her new neighbors and her kids to her homeland, via spongy injera and berbere-spiced stews.",
+                    "youtube": "https://www.youtube.com/embed/8JDEXaE6vdo?si=W2YZ24x87v4EhCao"
+    },
+    {
+                    "number": 26, 
+                    "name": "Estrellita's Snacks", 
+                    "instagram": "@estrellitas.snacks", 
+                    "tiktok": "@estrellitas_Snacks",
+                    "lat": 37.785969305714026, 
+                    "lng": -122.41062975566597,
+                    "title": "Spanish-Language Street Food",
+                    "tagline": "When Maria del Carmen Flores’ daughter Estrella was pregnant, she craved home cooking from El Salvador. So her mother brought the ingredients to cook for her—and sold the surplus on the streets, turning $20 into $300. In this Melting Spots story, Estrella tells us why so many immigrants in San Francisco get their start this way. (Spanish)",
+                    "youtube": "https://www.youtube.com/embed/DUtPXAs6nfg?si=7LNy_35gA_bQMUfc"
+    },
+    {
+        
+                    "number": 27, 
+                    "name": "Bini's Kitchen", 
+                    "instagram": "@biniskitchen", 
+                    "tiktok": "N/A",
+                    "lat": 37.77975987320831, 
+                    "lng": -122.4060319431329,
+                    "title": "Momos Everywhere",
+                    "tagline": "Bini Pradhan sells her momos everywhere— from farmers’ markets to music festivals—and San Francisco eats her dumplings up! In this Melting Spots story, we catch up with her in her downtown restaurant to hear why the hustle is worth it to put Nepalese food on the map.",
+                    "youtube": "https://www.youtube.com/embed/cJEBmjJL_O0?si=y3C1fjeX3u6jzP_H"
+    },
+    {
+                    "number": 28, 
+                    "name": "The Buena Vista Café", 
+                    "instagram": "@thebuenavistasf", 
+                    "tiktok": "N/A",
+                    "lat": 37.80768086498286,
+                    "lng": -122.4141106198046,
+                    "title": "The Invention of Irish Coffee",
+                    "tagline": "In this Melting Spots story, Buena Vista Café’s Larry Nolan tells us how the restaurant brought over the perfect recipe for Irish Coffee in the 1950s—becoming San Francisco’s “de facto” Irish institution and supercharging Irish whiskey exports in the process.",
+                    "youtube": "https://www.youtube.com/embed/R_Z-WXy5e04?si=MkRelBWGI9Nh6OD5"
+    }, 
+    {
+                
+                    "number": 29, 
+                    "name": "Tonga Room", 
+                    "instagram": "@tongaroom (@fairmontsanfrancisco)", 
+                    "tiktok": "N/A",
+                    "lat": 37.79258005976521,
+                    "lng": -122.40985837466042,
+                    "title": "Thunder, Lightning and Tiki Cocktails",
+                    "tagline": "A Mai Tai is more than a drink: it’s the taste of beaches, blue water and tropical islands. But the Mai Tai’s roots are far from Polynesia. In this Melting Spots story, we hear more about the “Polynesian pop” tiki aesthetic, the post-WWII misappropriation of Pacific Islands culture, and how Bay Area bartenders invented this cocktail 75 years ago.",
+                    "youtube": "https://www.youtube.com/embed/q4uyxbwxxqQ?si=GrLhQviU2HXmvzFF"
+    },
+    {
+                    "number": 30, 
+                    "name": "Liguria Bakery", 
+                    "instagram": "N/A", 
+                    "tiktok": "N/A",
+                    "lat": 37.80162969913019,
+                    "lng": -122.40873999000546,
+                    "title": "Focaccia, Four Ways",
+                    "tagline": "Michael Soracco gets up long before dawn to start baking the bread his family has made for a century: focaccia, sold just four ways. In this Melting Spots story, he explains how early Italian migrants like his grandfather made olive oil and garlic essential San Francisco flavors.",
+                    "youtube": "https://www.youtube.com/embed/ZNufRvOzgp4?si=JZ1Vxn6nwBTqzLv-"
+    },
+    {
+        
+                    "number": 31, 
+                    "name": "Comstock Saloon", 
+                    "instagram": "@comstocksaloon", 
+                    "tiktok": "N/A",
+                    "lat": 37.79703998324783, 
+                    "lng": -122.40489701513346,
+                    "title": "Peruvian Miners and Pisco Punch",
+                    "tagline": "In 1849, Peruvian miners introduced a brandy called “Pisco” (and cocoa leaves) to the bars springing up along the Gold-Rush era Barbary Coast, and a classic San Francisco cocktail was born. In this Melting Spots story, we hear how migrants arriving from across the globe influenced San Francisco’s food from the very start.",
+                    "youtube": "https://www.youtube.com/embed/mHgjfgMfUxM?si=0mX4Gv5HCZS_YUWH"
+    },
+    {
+
+                    "number": 32, 
+                    "name": "Boudin Bakery Cafe", 
+                    "instagram": "@boudinbakery", 
+                    "tiktok": "@boudinbakery",
+                    "lat": 37.80895267119153,
+                    "lng": -122.40949913789527,
+                    "title": "Starting San Francisco Sourdough",
+                    "tagline": "In the thick of the Gold Rush, French immigrant and master baker Isidore Boudin discovered that the Bay Area’s foggy microclimate produced yeast that added an irresistible tangy taste to his bread. That’s why today Boudin’s “sour dough” —according to famed local journalist Herb Caen—is synonymous with San Francisco.",
+                    "youtube": "https://www.youtube.com/embed/Q4Uodr5Cbuk?si=8AhiLcqM4xb4mMx3"
+    },
+    {
+                    "number": 33, 
+                    "name": "Sam Wo Restaurant", 
+                    "instagram": "@samworestaurant", 
+                    "tiktok": "N/A",
+                    "lat": 37.794382099624556, 
+                    "lng": -122.40450918815156,
+                    "title": "Not Just Chop Suey",
+                    "tagline": "Sam Wo began operating amongst the rubble of the 1906 earthquake, at a time when San Francisco’s leaders were trying to push the Chinese out of the City altogether. In this Melting Spots story, the owner’s daughter Julie Ho talks about how San Francisco’s first Chinese restaurants helped bridge this divide and secure Chinatown’s future.",
+                    "youtube": "https://www.youtube.com/embed/e4lH3jjZKw4?si=wns9AKsSZgBoTMca"
+    },
+    {
+                    "number": 34, 
+                    "name": "R&G Lounge", 
+                    "instagram": "@randglounge", 
+                    "tiktok": "N/A",
+                    "lat": 37.79424496696689,
+                    "lng": -122.40443063109332,
+                    "title": "American-Chinese Banquets",
+                    "tagline": "When SF-native Chelsea Hung first took over her parents’ Chinatown businesses, she didn’t speak much Cantonese. In this Melting Spots story, Chelsea talks about why she came back after moving to New York for a tech job, why Chinese banquets have remained central to Chinatown’s immigrant community, and how they still connect families across languages and generations.",
+                    "youtube": "https://www.youtube.com/embed/30A-ku46IlI?si=dc3SMmCWlSEvr0cF"
+    },
+    {
+                    "number": 35, 
+                    "name": "Yank Sing", 
+                    "instagram": "@yanksing", 
+                    "tiktok": "N/A",
+                    "lat": 37.791148881467606, 
+                    "lng": -122.39890062976062,
+                    "title": "Dim Sum Carts in Downtown",
+                    "tagline": "Vera Chan Waller is the third generation of the Chan family to work in Yank Sing’s kitchen. In this Melting Spots story, she talks about how the restaurant’s journey from Chinatown to downtown reflects her family’s integration into San Francisco, transforming dim sum and American ideas about Chinese food along the way.",
+                    "youtube": "https://www.youtube.com/embed/2AzB6RTyLQo?si=tBvaTrbB29fteMJw"
+    },
+    {
+
+                    "number": 36, 
+                    "name": "Boug Cali", 
+                    "instagram": "@bougcali", 
+                    "tiktok": "@bougcali",
+                    "lat": 37.782037541798466,
+                    "lng": -122.41581370113155,
+                    "title": "Creole with Bay Area Roots",
+                    "tagline": "SF-native Tiffany Carter grew up eating her way around the world— without having to leave the City. Now, she’s opening Boug Cali, a restaurant that builds on her San Francisco upbringing and her classic French training. In this Melting Spots story, she talks about evolving the Soul Food roots of her grandparents, who arrived from the South during the Great Migration.",
+                    "youtube": "https://www.youtube.com/embed/JUUM9cirnAI?si=QmGAblDCW7_wxQd2"
+    },
+    {
+        "number": 37, 
+        "name": "Midnite Bagel", 
+        "instagram": "@midnitebagel", 
+        "tiktok": "N/A",
+        "lat": 37.79539081966805,
+        "lng": -122.39228089000574,
+        "title": "A New Breed of Bagel",
+        "tagline": "There’s always been a Jewish community in San Francisco. But, the City has notoriously lacked one culturally Jewish food: a damn good bagel. In this Melting Spots story, baker Nick Beitcher tells us why SF is no longer competing with New York, as the Bay turns the corner on a better-bagel revolution.",
+        "youtube": "https://www.youtube.com/embed/wFumUGhLq6c?si=jBnS3jnWImhGu-UA"
+},
+    {
+        
+                    "number": 38, 
+                    "name": "Besharam", 
+                    "instagram": "@besharamsf", 
+                    "tiktok": "N/A",
+                    "lat": 37.75434652961561,
+                    "lng": -122.38929315138824,
+                    "title": "Spicy Food is for Spicy Girls",
+                    "tagline": "Don’t expect to order chicken tikka masala when you eat at Besharam. The restaurant’s name  means “shameless” in Urdu, and the food crosses Gujarati cooking with California flair. Besharam is also an apt tagline for chef Heena Patel, whose journey to find her place here involved breaking through the expectations often heaped upon immigrants and Indian women.",
+                    "youtube": "https://www.youtube.com/embed/Sp3kNz9jbEk?si=W2b0DKwNaE8fNPvN"
+    }
+    
+
+]
+    
+    
