@@ -21,7 +21,19 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'AlexHand';
+    color: #333;
   }
+
+  #toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8F4E6;
+  }
+
+  /* .total {
+    display: flex;
+  } */
 
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -119,3 +131,6 @@
   .restaurant-desc.highlight .details {
     display: flex;
   }
+
+
+  
