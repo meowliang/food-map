@@ -16,6 +16,8 @@ let totalDistance = document.getElementById('total-distance');
 let totalTime = document.getElementById('total-time');
 let resetButton = document.getElementById('reset-button');
 
+let directionsDiv = document.getElementById('directions');
+
 let waypointsArray = [];
 let polylines = [];
 
@@ -95,7 +97,7 @@ async function initMap() {
 
   const marker = new google.maps.marker.AdvancedMarkerElement({
     position: iconPosition,
-    title: restaurant.title, 
+    title: restaurant.name, 
     map: map, 
     content: markerContent,
   });
@@ -113,7 +115,9 @@ async function initMap() {
     console.log('thanh long desc attached');
   }
 
-  //adding events to markers on click
+  //adding routes
+
+  //addStop(marker, restaurant, restaurant.number);
 
   marker.addListener("click", () => {
 
@@ -131,7 +135,6 @@ async function initMap() {
       lastSelectedMarker = marker;
     } else if (selectedMarkers === 6) {
       selectedMarkers = 0;
-      waypointsArray = [];
       originMarker = { lat: restaurant.lat, lng: restaurant.lng };
       resetRoutes();
     } else if (selectedMarkers === 2) {
@@ -144,6 +147,7 @@ async function initMap() {
     } else {
       console.error('Unexpected state for selectedMarkers:', selectedMarkers);
     }
+
     
   });
 
@@ -169,6 +173,9 @@ function resetRoutes() {
       });
 
       polylines = [];
+
+      totalDistance.innerHTML = `<p>Total Distance: 0m</p>`;
+      totalTime.innerHTML =  `<p>Total Time: 0s</p>`;
 }
 
 
@@ -190,14 +197,6 @@ function attachDescription(marker, description) {
     }
   });
 
-  // const infoWindowContent = infoWindow.getContent();
-  // if (infoWindowContent) {
-  //   const infoWindowDiv = infoWindowContent.firstChild;
-  //   if (infoWindowDiv) {
-  //     infoWindowDiv.classList.add("restaurant-desc");
-  //   }
-  // }
-
 
 } catch (error) {
   console.error('error in attachDescription:', error);
@@ -205,6 +204,46 @@ function attachDescription(marker, description) {
 
 }
 
+
+// function addStop(marker, restaurant, number) {
+
+//   console.log('adding stop');
+
+//   let addStopButton = document.getElementById(`add-stop-${number}`);
+
+//   addStopButton.addEventListener("click", () => {
+
+//     if(lastSelectedMarker === marker) {
+//       return;
+//     }
+    
+//     selectedMarkers++;
+//     lastSelectedMarker = marker;
+//     console.log('selected markers: ', selectedMarkers);
+
+//     if (selectedMarkers === 1) {
+//       originMarker = { lat: restaurant.lat, lng: restaurant.lng };
+//       lastSelectedMarker = marker;
+//     } else if (selectedMarkers === 6) {
+//       selectedMarkers = 0;
+//       waypointsArray = [];
+//       originMarker = { lat: restaurant.lat, lng: restaurant.lng };
+//       resetRoutes();
+//     } else if (selectedMarkers === 2) {
+//       destinationMarker = { lat: restaurant.lat, lng: restaurant.lng };
+//       getRoute(originMarker, destinationMarker);
+//     } else if (selectedMarkers > 2) {
+//       waypointsArray.push(destinationMarker);
+//       destinationMarker = { lat: restaurant.lat, lng: restaurant.lng };
+//       getRoute(originMarker, destinationMarker, waypointsArray);
+//     } else {
+//       console.error('Unexpected state for selectedMarkers:', selectedMarkers);
+//     }
+//   });
+
+//   console.log('stop added');
+
+// }
 // const restaurants = await getRestaurants();
 initMap();
 
@@ -280,11 +319,27 @@ async function getRoute(origin, destination, waypoints = []) {
   //process route and display
 
   const route = data.routes[0];
-  const distance = data.routes[0].distanceMeters;
-  const duration = data.routes[0].duration;
+  const distance = route.distanceMeters;
+  const duration = route.duration;
+  // const legs = route.legs;
+  // const directions = [];
+
+  // for (let i=0; i < legs.length; i++) {
+  //   for(let j=0; j < legs[i].steps.length; j++) {
+  //   directions.push(legs[i].steps[j].navigationInstruction.instructions);
+  //   }
+  // }
 
   totalDistance.innerHTML = `<p>Total Distance: ${distance}m</p>`;
   totalTime.innerHTML =  `<p>Total Time: ${duration}</p>`;
+
+//   document.addEventListener("DOMContentLoaded", (e) => {
+
+//   directionsDiv.hidden = false;
+//   directions.forEach((step) => {
+//   directionsDiv.innerHTML += `<p>${step}</p>`;
+//   });
+// });
 
   console.log("Route:", route, distance, duration);
 

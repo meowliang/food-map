@@ -28,8 +28,23 @@
   #toolbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #E8F4E6;
+    padding: 4px 16px;
   }
+
+  #reset-button, #directions-button {
+    display: block;
+    padding: 12px 24px;
+    font-family: 'AlexHand';
+    font-size: 16px;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 2px 4px 8px green;
+    border: none;
+    background-color: #fff;
+  }
+
 
   /* .total {
     display: flex;
