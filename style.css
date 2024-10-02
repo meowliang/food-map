@@ -9,6 +9,8 @@
 }
 
 
+
+
 /* 
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
@@ -28,6 +30,27 @@
     padding: 0;
     font-family: 'AlexHand';
     color: #333;
+  }
+
+  #calmig-nav {
+    display: flex;
+    font-family: 'Roboto';
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav-links {
+    display: flex;
+    gap: 16px;
+    color: #0B5488;
+  }
+
+  #tour-button {
+    padding: 16px 24px;
+    background-color: #0B5488;
+    color: white;
+    border-radius: 24px;
   }
 
   #toolbar {
@@ -116,6 +139,7 @@
 
   .list-title {
     font-size: 16px;
+    font-family: 'Roboto';
   }
 
   .list-icon-container {
