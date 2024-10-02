@@ -18,15 +18,18 @@ let resetButton = document.getElementById('reset-button');
 
 let directionsDiv = document.getElementById('directions');
 
+let list = document.getElementById('list');
+
 let waypointsArray = [];
 let polylines = [];
+
 
 
 async function initMap() {
 
   //first call JSON data
 
-  const url = "http://127.0.0.1:5500/restaurants.json";
+  const url = "./restaurants.json";
 
   try {
     
@@ -64,7 +67,10 @@ async function initMap() {
   //loop through icons to place on map
 
   restaurants.forEach((restaurant, index) => {
-  
+
+
+    //putting icons on map
+    
 
   const icon = document.createElement("img");
   icon.src = `./assets/${restaurant.number}.png`;
@@ -74,7 +80,7 @@ async function initMap() {
                 <iframe width="320" height="auto" src="${restaurant.youtube}" title="Melting Spots video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p>${restaurant.tagline}</p>
                 <p><a href="https://instagram.com/${restaurant.instagram}" target="_blank">${restaurant.instagram}</a></p>
-                <input type="button" id="add-stop-${restaurant.number}" value="Add stop">`;
+                <input type="button" id="directions-to-${restaurant.number}" value="Directions">`;
   icon.classList.add("restaurant-icon");
 
   if (restaurant.number === 1) {
@@ -106,6 +112,54 @@ async function initMap() {
   if (restaurant.number === 1) {
     console.log(marker);
   }
+
+        //adding restaurant to list
+
+        const listIcon = document.createElement("img");
+        listIcon.src = icon.src;
+        listIcon.classList.add("list-icon");
+
+        const listItem = document.createElement("div");
+        listItem.classList.add("list-item");
+
+        const listName = document.createElement("div");
+        listName.classList.add("list-name");
+        listName.textContent = restaurant.name;
+
+        const listTitle = document.createElement("div");
+        listTitle.classList.add("list-title");
+        listTitle.textContent = restaurant.title;
+
+        const textContainer = document.createElement("div");
+        textContainer.classList.add("text-container");
+        textContainer.appendChild(listName);
+        textContainer.appendChild(listTitle);
+
+        const listIconContainer = document.createElement("div");
+        listIconContainer.classList.add("list-icon-container");
+        listIconContainer.appendChild(listIcon);
+
+        listItem.appendChild(textContainer);
+        listItem.appendChild(listIconContainer);
+    
+        // listItem.innerHTML += `<div class="list-item" style="">
+        //                   <div style="display: inline-block">
+        //                   <div style="font-size: 20px;">${restaurant.name}</div>
+        //                   <div style="font-size: 16px;">${restaurant.title}</div>
+        //                   </div>
+        //                   <div style="height:48px; width:48px; background-color:#E8F4E6; padding: 8px; border-radius: 12px;">${listIcon}</div>
+
+                          
+        //                   </div>`;
+
+        
+
+      list.appendChild(listItem);
+
+
+
+
+    
 
   //attach description to each icon
 
@@ -147,15 +201,27 @@ async function initMap() {
     } else {
       console.error('Unexpected state for selectedMarkers:', selectedMarkers);
     }
-
     
   });
+
+  //adding click event to list item to pan to marker
+
+  listItem.addEventListener("click", () => {
+    const latLng = new google.maps.LatLng(marker.position); //how to pass lat and long coords?
+    map.panTo(latLng);
+    marker.infoWindow.open(map, marker);
+  });
+
+  //where is thanh long???
 
   if (restaurant.number === 1) {
     console.log('thanh long toggled');
   }
 
   });
+
+
+
 
 } catch (error) {
   console.error(error.message);
@@ -247,10 +313,31 @@ function attachDescription(marker, description) {
 // const restaurants = await getRestaurants();
 initMap();
 
+//adding original map as clickable overlay upon visiting webpage
+
+const mapImg = document.querySelector("#alexMap img");
+const alexMap = document.getElementById("alexMap");
+
+mapImg.addEventListener("click", () => {
+
+  alexMap.classList.add("hidden");
+
+});
+
+
+
+let directionsButtons = [];
+
+for (let i=0; i < 39; i++) {
+  directionsButtons.push(document.getElementById(`directions-to-${i}`));hjdc2q
+}
+
 async function getRoute(origin, destination, waypoints = []) {
 
   const apiKey = "AIzaSyCth9BzQuA_xiX5nzZb-RU8BocOGefC5Go";
   const url = "https://routes.googleapis.com/directions/v2:computeRoutes";
+
+  //Directions request: https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=YOUR_API_KEY
 
   const body = {
     origin: {
