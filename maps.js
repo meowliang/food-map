@@ -3,7 +3,7 @@ const sf = { lat: 37.7749, lng: -122.4194};
 const SF_BOUNDS = {
   north: 37.839,  // Upper latitude
   south: 37.703,  // Lower latitude
-  west: -122.524, // Left longitude
+  west: -122.599, // Left longitude
   east: -122.358, // Right longitude
 }
 
@@ -65,6 +65,8 @@ async function initMap() {
   );
 
   //loop through icons to place on map
+
+  //FIXME: hardcode Thanh Long
 
   restaurants.forEach((restaurant, index) => {
 
@@ -315,10 +317,9 @@ initMap();
 
 //adding original map as clickable overlay upon visiting webpage
 
-const mapImg = document.querySelector("#alexMap img");
 const alexMap = document.getElementById("alexMap");
 
-mapImg.addEventListener("click", () => {
+alexMap.addEventListener("click", () => {
 
   alexMap.classList.add("hidden");
 
