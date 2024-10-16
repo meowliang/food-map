@@ -16,12 +16,14 @@ let totalDistance = document.getElementById('total-distance');
 let totalTime = document.getElementById('total-time');
 let resetButton = document.getElementById('reset-button');
 
-let directionsDiv = document.getElementById('directions');
+let directionsDiv = document.getElementById('directions-display');
 
 let list = document.getElementById('list');
-
+ 
 let waypointsArray = [];
 let polylines = [];
+
+let currentInfoWindow = null;
 
 
 
@@ -244,6 +246,8 @@ function resetRoutes() {
 
       totalDistance.innerHTML = `<p>Total Distance: 0m</p>`;
       totalTime.innerHTML =  `<p>Total Time: 0s</p>`;
+
+      currentInfoWindow.close();
 }
 
 
@@ -254,15 +258,17 @@ function attachDescription(marker, description) {
 
   marker.infoWindow = new google.maps.InfoWindow({
     content: description,
-    maxWidth: 340,
+    maxWidth: 390,
   });
 
   marker.addListener("click", () => {
-    if (marker.infoWindow.getMap()) {
-      marker.infoWindow.close();
-    } else {
-      marker.infoWindow.open(map, marker);
+    if (currentInfoWindow) {
+      currentInfoWindow.close();
     }
+
+      marker.infoWindow.open(map, marker);
+    
+    currentInfoWindow = marker.infoWindow;
   });
 
 
@@ -365,7 +371,7 @@ async function getRoute(origin, destination, waypoints = []) {
             longitude: waypoint.lng
           }
         }
-      })) : undefined,
+      })) : [],
     travelMode: "DRIVE",
     polylineEncoding: "ENCODED_POLYLINE",
     routingPreference: "TRAFFIC_AWARE",
@@ -383,7 +389,8 @@ async function getRoute(origin, destination, waypoints = []) {
   const headers = {
     'Content-Type': 'application/json',
     'X-Goog-Api-Key': apiKey,
-    'X-Goog-FieldMask': 'routes.duration,routes.distanceMeters,routes.legs,routes.legs.polyline,routes.legs.steps.polyline,routes.polyline.encodedPolyline',
+    'X-Goog-FieldMask': 'routes.duration,routes.distanceMeters,routes.legs,routes.legs.polyline,routes.legs.steps.polyline,routes.polyline.encodedPolyline,routes.legs.steps.navigationInstruction.instructions',
+                      
   };
 
 
@@ -401,8 +408,7 @@ async function getRoute(origin, destination, waypoints = []) {
   }
 
   const data = await response.json();
-  console.log('Data:', data);
-
+  
 
   //process route and display
 
@@ -417,6 +423,22 @@ async function getRoute(origin, destination, waypoints = []) {
   //   directions.push(legs[i].steps[j].navigationInstruction.instructions);
   //   }
   // }
+
+  directionsDiv.innerHTML = ''; //clear previous directions
+
+  const directions = []; //extract navigation instructions
+  route.legs.forEach(leg => {
+    leg.steps.forEach(step => {
+      const instruction = step.navigationInstruction.instructions;
+      directions.push(instruction);
+    });
+  });
+
+  directions.forEach(instruction => { //display navigation instructions
+    directionsDiv.innerHTML += `<p>${instruction}</p>`;
+  });
+
+  console.log('Directinos: ', directionsDiv.innerHTML);
 
   totalDistance.innerHTML = `<p>Total Distance: ${distance}m</p>`;
   totalTime.innerHTML =  `<p>Total Time: ${duration}</p>`;
