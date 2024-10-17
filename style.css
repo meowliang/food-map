@@ -393,6 +393,7 @@
     #directions-display {
       height: 200px;
       width: 100%;
+      overflow: scroll;
     }
 
   @media only screen and (max-width: 600px) {

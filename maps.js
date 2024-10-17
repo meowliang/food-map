@@ -471,9 +471,9 @@ function displayRouteOnMap(encodedPolyline) {
   const routePolyline = new google.maps.Polyline({
     path: decodedPath,
     geodesic: false,
-    strokeColor: '#46A9C6',
+    strokeColor: '#EA6465',
     strokeOpacity: 0.9,
-    strokeWeight: 4,
+    strokeWeight: 6,
     map: map,
   });
 
