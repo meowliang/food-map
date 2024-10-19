@@ -23,6 +23,7 @@ let list = document.getElementById('list');
 let waypointsArray = [];
 let polylines = [];
 
+
 let currentInfoWindow = null;
 
 
@@ -424,21 +425,35 @@ async function getRoute(origin, destination, waypoints = []) {
   //   }
   // }
 
-  directionsDiv.innerHTML = ''; //clear previous directions
+  let directions = []; //extract navigation instructions
+  // directionsDiv.innerHTML = ''; //clear previous directions
 
-  const directions = []; //extract navigation instructions
+
   route.legs.forEach(leg => {
     leg.steps.forEach(step => {
-      const instruction = step.navigationInstruction.instructions;
-      directions.push(instruction);
+      const instruction = step.instructions;
+
+      if (instruction) {
+        console.log(step);
+        console.log(instruction);
+        directions.push(instruction);
+      } else {
+        console.log("no instructions available for this step");
+      }
+      
+      
     });
   });
 
-  directions.forEach(instruction => { //display navigation instructions
-    directionsDiv.innerHTML += `<p>${instruction}</p>`;
-  });
+    console.log(directionsDiv);
+    console.log(directions);
 
-  console.log('Directinos: ', directionsDiv.innerHTML);
+    directions.forEach(instruction => { //display navigation instructions
+      directionsDiv.innerHTML += `<p>${instruction}</p>`;
+    });
+  
+    console.log('Directinos: ', directionsDiv.innerHTML);
+
 
   totalDistance.innerHTML = `<p>Total Distance: ${distance}m</p>`;
   totalTime.innerHTML =  `<p>Total Time: ${duration}</p>`;

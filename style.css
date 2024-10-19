@@ -62,6 +62,7 @@
     padding: 8px 16px;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
   }
 
   #calmig-nav button {
@@ -101,6 +102,13 @@
     color: white;
     border-radius: 24px;
   }
+
+
+  #arch-canvas {
+    
+  }
+
+
 
   #toolbar {
     display: flex;
@@ -397,6 +405,19 @@
     }
 
   @media only screen and (max-width: 600px) {
+
+    #socials {
+      display: none;
+    }
+
+    #nav-links {
+      display: none;
+    }
+
+    #calmig-nav {
+      justify-content: center;
+      align-items: center;
+    }
 
     #map-list {
       display: flex;
