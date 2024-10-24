@@ -11,10 +11,6 @@
   </head>
   <body>
 
-    <div id="alexMap">
-      <img src="alex-map.png">
-    </div>
-
     <script async src="maps.js"></script>
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCth9BzQuA_xiX5nzZb-RU8BocOGefC5Go&loading=async&callback=initMap">
@@ -37,46 +33,66 @@
       </div>
     </div>
 
-    <!-- <canvas id="arch-canvas"></canvas> -->
+
+    <div id="alexMap">
+      <img src="alex-map.png">
+      <div id="subhead"><h1>PODCAST & INTERACTIVE MAP</h1></div>
+    </div>
+
+        <div id="audio-player">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/2hqSzWW1GFAyugtjNxfgcR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
 
     <div id="description-container">
 
 
-        <img src="MSgraphic.png" id="noodles">
-
+        <!-- <img src="MSgraphic.png" id="noodles"> -->
+        <div id="ms-images">
+          <img id="logotype" src="ms-type.png">
+          <img id="noodles" src="noodle soup.png">
+        </div>
       
         <div id="description">
-          <p>Join the California Migration Museum on a bite-sized journey across San Francisco’s food scene.
-
-            From Gold Rush saloons to Instagram pop-ups, and Rice-A-Roni to Mission burritos, here are 38 stories exploring how immigrants have shaped the City and fed its residents since 1849.
-            
-            This map is your menu — tap the numbers next to each icon to listen, then head out and taste the stories for yourself. Buen Provecho</p>
+          <p>Join the California Migration Museum on a bite-sized journey across San Francisco’s food scene. From Gold Rush saloons to Instagram popups, and Rice-a- Roni to Mission burritos, here are 38 stories exploring how immigrants have shaped the city and fed its residents since 1849. </p>
+          <p><strong>The Melting Spots podcast</strong> takes listeners through more than 2 centuries of SF’s food and immigrant history, weaving together the stories of 38 immigrant chefs and businesses. 
+            Listen now wherever you get your podcasts or here.
+            </p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/52hqtbfJCm5Cv6bZ0ZjBBY?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div> 
-        <a href="https://www.flipcause.com/secure/cause_pdetails/MjA5MzY4" target="_blank"><button>Purchase a printed map</button></a>
+        <div id="print-map">
+          <a href="https://www.flipcause.com/secure/cause_pdetails/MjA5MzY4" target="_blank"><img src="alex-map.png"></a>
+          <div id="print-map-desc">
+          <p>Limited edition map prints signed by illustrator Alex Foster are available by donation.
+            <a href="https://www.flipcause.com/secure/cause_pdetails/MjA5MzY4" target="_blank">
+              <br>
+              <button>Get a map</button>
+            </a>
+          </div>
+          </p>
+          
+        </div>
+        
+        
         <!-- <audio controls autoplay>
           <source src="prubechu.mp3" type="audio/mpeg">
           Your browser does not support this audio player.
         </audio> -->
-        <div id="audio-player">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/2hqSzWW1GFAyugtjNxfgcR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
+    </div>
+
+    <div id="toolbar">
+      
+      <p> Use the map below as your menu to the city — tap the icons to learn more, then head out and taste the stories for yourself. Buen Provecho!
+      </p>
+      <!-- <div id="total-distance"><p>Total Distance: </p></div>
+      <div id="total-time"><p>Total Time: </p></div> -->
+      <div id="reset"><input type="button" id="reset-button" value="Reset choices"></div>
+      <!-- <a href="https://calmigration.org" target="_blank"><img src="./assets/0.png" width="60px" height="auto"></a> -->
 
     </div>
 
     <div id="map-container">
 
-    <div id="toolbar">
-      
-
-      <div id="total-distance"><p>Total Distance: </p></div>
-      <div id="total-time"><p>Total Time: </p></div>
-      <div id="reset"><input type="button" id="reset-button" value="Reset choices"></div>
-      <div id="directions"><input type="button" id="directions-button" value="Directions"></div>
-      <a href="https://calmigration.org" target="_blank"><img src="./assets/0.png" width="60px" height="auto"></a>
-
-    </div>
-
-    <div id="directions-display"></div>
   
 
     <div id="list"></div>
@@ -87,6 +103,7 @@
     </div> -->
 
     <div id="map"></div>
+
 
 
 

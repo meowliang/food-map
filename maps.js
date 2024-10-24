@@ -1,8 +1,8 @@
 let map;
 const sf = { lat: 37.7749, lng: -122.4194};
 const SF_BOUNDS = {
-  north: 37.839,  // Upper latitude
-  south: 37.703,  // Lower latitude
+  north: 37.890,  // Upper latitude
+  south: 37.675,  // Lower latitude
   west: -122.599, // Left longitude
   east: -122.358, // Right longitude
 }
@@ -16,7 +16,6 @@ let totalDistance = document.getElementById('total-distance');
 let totalTime = document.getElementById('total-time');
 let resetButton = document.getElementById('reset-button');
 
-let directionsDiv = document.getElementById('directions-display');
 
 let list = document.getElementById('list');
  
@@ -71,6 +70,8 @@ async function initMap() {
 
   //FIXME: hardcode Thanh Long
 
+
+
   restaurants.forEach((restaurant, index) => {
 
 
@@ -84,8 +85,7 @@ async function initMap() {
                 <h3>${restaurant.title}</h3>
                 <iframe width="320" height="auto" src="${restaurant.youtube}" title="Melting Spots video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p>${restaurant.tagline}</p>
-                <p><a href="https://instagram.com/${restaurant.instagram}" target="_blank">${restaurant.instagram}</a></p>
-                <input type="button" id="directions-to-${restaurant.number}" value="Directions">`;
+                <p><a href="https://instagram.com/${restaurant.instagram}" target="_blank">${restaurant.instagram}</a></p>`;
   icon.classList.add("restaurant-icon");
 
   if (restaurant.number === 1) {
@@ -146,16 +146,6 @@ async function initMap() {
 
         listItem.appendChild(textContainer);
         listItem.appendChild(listIconContainer);
-    
-        // listItem.innerHTML += `<div class="list-item" style="">
-        //                   <div style="display: inline-block">
-        //                   <div style="font-size: 20px;">${restaurant.name}</div>
-        //                   <div style="font-size: 16px;">${restaurant.title}</div>
-        //                   </div>
-        //                   <div style="height:48px; width:48px; background-color:#E8F4E6; padding: 8px; border-radius: 12px;">${listIcon}</div>
-
-                          
-        //                   </div>`;
 
         
 
@@ -164,19 +154,16 @@ async function initMap() {
 
 
 
-    
-
   //attach description to each icon
 
   attachDescription(marker, tagline);
 
+
   if (restaurant.number === 1) {
-    console.log('thanh long desc attached');
+    console.log('thanh long exists');
   }
 
   //adding routes
-
-  //addStop(marker, restaurant, restaurant.number);
 
   marker.addListener("click", () => {
 
@@ -214,23 +201,59 @@ async function initMap() {
   listItem.addEventListener("click", () => {
     const latLng = new google.maps.LatLng(marker.position); //how to pass lat and long coords?
     map.panTo(latLng);
-    marker.infoWindow.open(map, marker);
+
+    openInfoWindow(map, marker);
   });
 
   //where is thanh long???
 
-  if (restaurant.number === 1) {
-    console.log('thanh long toggled');
-  }
 
   });
 
+  // const tlIcon = document.createElement("img");
+  // tlIcon.src = `./assets/${restaurants[1].number}.png`;
+  // let tlIconPosition = { lat: restaurants[1].lat, lng: restaurants[1].lng};
+  // let tlTagline = `<h2>${restaurants[1].name}</h2>
+  //               <h3>${restaurants[1].title}</h3>
+  //               <iframe width="320" height="auto" src="${restaurants[1].youtube}" title="Melting Spots video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  //               <p>${restaurants[1].tagline}</p>
+  //               <p><a href="https://instagram.com/${restaurants[1].instagram}" target="_blank">${restaurants[1].instagram}</a></p>`;
+  // tlIcon.classList.add("restaurant-icon");
 
+  // const tlMarkerContent = document.createElement('div');
+
+  // const tlMarkerNumber = document.createElement('div');
+  // tlMarkerNumber.textContent = restaurant.number;
+  // tlMarkerNumber.classList.add('number-icon');
+
+  // tlMarkerContent.appendChild(icon);
+  // tlMarkerContent.appendChild(markerNumber); //append icon image to marker content
+
+
+  // const tlMarker = new google.maps.marker.AdvancedMarkerElement({
+  //   position: tlIconPosition,
+  //   title: restaurants[1].name, 
+  //   map: map, 
+  //   content: tlMarkerContent,
+  // });
+
+  
+  // attachDescription(tlMarker, tlTagline);
 
 
 } catch (error) {
   console.error(error.message);
 }
+}
+
+function openInfoWindow(map, marker) {
+  if(currentInfoWindow) {
+    currentInfoWindow.close();
+    }
+
+    marker.infoWindow.open(map, marker);
+
+    currentInfoWindow = marker.infoWindow;
 }
 
 resetButton.addEventListener('click', resetRoutes);
@@ -263,13 +286,7 @@ function attachDescription(marker, description) {
   });
 
   marker.addListener("click", () => {
-    if (currentInfoWindow) {
-      currentInfoWindow.close();
-    }
-
-      marker.infoWindow.open(map, marker);
-    
-    currentInfoWindow = marker.infoWindow;
+    openInfoWindow(map, marker);
   });
 
 
@@ -280,65 +297,14 @@ function attachDescription(marker, description) {
 }
 
 
-// function addStop(marker, restaurant, number) {
-
-//   console.log('adding stop');
-
-//   let addStopButton = document.getElementById(`add-stop-${number}`);
-
-//   addStopButton.addEventListener("click", () => {
-
-//     if(lastSelectedMarker === marker) {
-//       return;
-//     }
-    
-//     selectedMarkers++;
-//     lastSelectedMarker = marker;
-//     console.log('selected markers: ', selectedMarkers);
-
-//     if (selectedMarkers === 1) {
-//       originMarker = { lat: restaurant.lat, lng: restaurant.lng };
-//       lastSelectedMarker = marker;
-//     } else if (selectedMarkers === 6) {
-//       selectedMarkers = 0;
-//       waypointsArray = [];
-//       originMarker = { lat: restaurant.lat, lng: restaurant.lng };
-//       resetRoutes();
-//     } else if (selectedMarkers === 2) {
-//       destinationMarker = { lat: restaurant.lat, lng: restaurant.lng };
-//       getRoute(originMarker, destinationMarker);
-//     } else if (selectedMarkers > 2) {
-//       waypointsArray.push(destinationMarker);
-//       destinationMarker = { lat: restaurant.lat, lng: restaurant.lng };
-//       getRoute(originMarker, destinationMarker, waypointsArray);
-//     } else {
-//       console.error('Unexpected state for selectedMarkers:', selectedMarkers);
-//     }
-//   });
-
-//   console.log('stop added');
-
-// }
-// const restaurants = await getRestaurants();
 initMap();
 
 //adding original map as clickable overlay upon visiting webpage
 
 const alexMap = document.getElementById("alexMap");
 
-alexMap.addEventListener("click", () => {
-
-  alexMap.classList.add("hidden");
-
-});
 
 
-
-let directionsButtons = [];
-
-for (let i=0; i < 39; i++) {
-  directionsButtons.push(document.getElementById(`directions-to-${i}`));hjdc2q
-}
 
 async function getRoute(origin, destination, waypoints = []) {
 
@@ -414,59 +380,10 @@ async function getRoute(origin, destination, waypoints = []) {
   //process route and display
 
   const route = data.routes[0];
-  const distance = route.distanceMeters;
-  const duration = route.duration;
-  // const legs = route.legs;
-  // const directions = [];
-
-  // for (let i=0; i < legs.length; i++) {
-  //   for(let j=0; j < legs[i].steps.length; j++) {
-  //   directions.push(legs[i].steps[j].navigationInstruction.instructions);
-  //   }
-  // }
-
-  let directions = []; //extract navigation instructions
-  // directionsDiv.innerHTML = ''; //clear previous directions
-
-
-  route.legs.forEach(leg => {
-    leg.steps.forEach(step => {
-      const instruction = step.instructions;
-
-      if (instruction) {
-        console.log(step);
-        console.log(instruction);
-        directions.push(instruction);
-      } else {
-        console.log("no instructions available for this step");
-      }
-      
-      
-    });
-  });
-
-    console.log(directionsDiv);
-    console.log(directions);
-
-    directions.forEach(instruction => { //display navigation instructions
-      directionsDiv.innerHTML += `<p>${instruction}</p>`;
-    });
-  
-    console.log('Directinos: ', directionsDiv.innerHTML);
-
-
-  totalDistance.innerHTML = `<p>Total Distance: ${distance}m</p>`;
-  totalTime.innerHTML =  `<p>Total Time: ${duration}</p>`;
-
-//   document.addEventListener("DOMContentLoaded", (e) => {
-
-//   directionsDiv.hidden = false;
-//   directions.forEach((step) => {
-//   directionsDiv.innerHTML += `<p>${step}</p>`;
-//   });
-// });
-
-  console.log("Route:", route, distance, duration);
+  if (!route) {
+    console.error('No route found');
+    return;
+  }
 
 
   const polyline = route.polyline.encodedPolyline;
@@ -481,6 +398,10 @@ async function getRoute(origin, destination, waypoints = []) {
 }
 
 function displayRouteOnMap(encodedPolyline) {
+  if (!encodedPolyline) {
+    console.error('No polyline to display');
+    return;
+  }
   const decodedPath = google.maps.geometry.encoding.decodePath(encodedPolyline);
   console.log(decodedPath);
   const routePolyline = new google.maps.Polyline({
