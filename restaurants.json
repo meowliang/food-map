@@ -1,17 +1,5 @@
 [
 
-    {
-        "number": 0,
-        "name": "California Migration Museum",
-        "instagram": "",
-        "tiktok": "",
-        "lat": 37.793899, 
-        "lng": -122.491161,
-        "title": "California Migration Museum",
-        "tagline": "Exploring living stories of migration, one neighboard at a time.",
-        "youtube": " "
-    },
-
     { 
 
                     "number": 1, 
@@ -50,7 +38,7 @@
                     "lng": -122.46782291469059,
                     "title": "Korean Imports are Nothing to Cry About",
                     "tagline": "When San Francisco's first H-Mart opened in 2022, it was a major news event. In this Melting Spots story, journalist Soleil Ho talks about how H-Mart’s arrival changed the City’s Korean food scene, reflects on the impact of the multinational chain on smaller Asian grocers, and shares some of their favorite H-Mart snacks.",
-                    "youtube": "https://www.youtube.com/embed/7zfbw1-DEHU?si=q918sV6F1G0WDqNE"
+                    "youtube": "https://www.youtube.com/embed/Gg06wvy2osw?si=WEIhxE4CrEt5W7Be"
 
         },
 
@@ -63,7 +51,7 @@
                     "lat": 37.77026937014912, 
                     "lng": -122.47046808955726,
                     "title": "The Fortune Cookie's (Surprising) Origins",
-                    "tagline": "The fortune cookie was born in San Francisco—but not in Chinatown. In this Melting Spots story, we hear how it was actually a Japanese immigrant, George Hagiwara, who adapted the sesame crackers he loved for American palates, before Japanese American internment during WWII saw them reinvented as a Chinese American classic.",
+                    "tagline": "The fortune cookie was born in San Francisco—but not in Chinatown. In this Melting Spots story, we hear how it was actually a Japanese immigrant, Makoto Hagiwara, who adapted the sesame crackers he loved for American palates, before Japanese American internment during WWII saw them reinvented as a Chinese American classic.",
                     "youtube": "https://www.youtube.com/embed/vfIMb2UNh3c?si=LcwA2X2oAkML5k8T"
 
     },
@@ -153,7 +141,7 @@
                     "lat": 37.79027225049224, 
                     "lng": -122.43308435568834,
                     "title": "Better than Rice-a-Roni",
-                    "tagline": "When Levon Der Bedrossian arrived in California, hummus was only for hippies. In this Melting Spots story, Levon and his son Vannick talk about their Lebanese and Armenian heritage, and explain how Rice-a-Roni, “The San Francisco Treat,” is a world away from his grandmother’s rice pilaf.",
+                    "tagline": "When Levon Der Bedrossian arrived in California, hummus was only for hippies. In this Melting Spots story, Levon and his son Vannick talk about their Lebanese and Armenian heritage, and explain how Rice-a-Roni, “The San Francisco Treat,” is a world away from his grandmother’s rice pilaf. Locations at 288 Noe street and 2210 Fillmore Street",
                     "youtube": "https://www.youtube.com/embed/K32ClUOUf6k?si=mvMN8sPXoyhLZllD"
 
     },
@@ -472,6 +460,17 @@
                     "title": "Spicy Food is for Spicy Girls",
                     "tagline": "Don’t expect to order chicken tikka masala when you eat at Besharam. The restaurant’s name  means “shameless” in Urdu, and the food crosses Gujarati cooking with California flair. Besharam is also an apt tagline for chef Heena Patel, whose journey to find her place here involved breaking through the expectations often heaped upon immigrants and Indian women.",
                     "youtube": "https://www.youtube.com/embed/Sp3kNz9jbEk?si=W2b0DKwNaE8fNPvN"
+    },
+    {
+        "number": 39,
+        "name": "California Migration Museum",
+        "instagram": "",
+        "tiktok": "",
+        "lat": 37.793899, 
+        "lng": -122.491161,
+        "title": "California Migration Museum",
+        "tagline": "Exploring living stories of migration, one neighboard at a time.",
+        "youtube": " "
     }
     
 

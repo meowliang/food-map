@@ -129,11 +129,15 @@ async function initMap() {
 
         const listName = document.createElement("div");
         listName.classList.add("list-name");
-        listName.textContent = restaurant.name;
+        listName.textContent = `${restaurant.number}. ${restaurant.name}`;
 
         const listTitle = document.createElement("div");
         listTitle.classList.add("list-title");
         listTitle.textContent = restaurant.title;
+
+        // const listNum = document.createElement("div");
+        // listNum.classList.add("list-name");
+        // listNum.textContent = restaurant.number
 
         const textContainer = document.createElement("div");
         textContainer.classList.add("text-container");
@@ -198,47 +202,20 @@ async function initMap() {
 
   //adding click event to list item to pan to marker
 
-  listItem.addEventListener("click", () => {
-    const latLng = new google.maps.LatLng(marker.position); //how to pass lat and long coords?
-    map.panTo(latLng);
-
-    openInfoWindow(map, marker);
-  });
-
-  //where is thanh long???
-
-
-  });
-
-  // const tlIcon = document.createElement("img");
-  // tlIcon.src = `./assets/${restaurants[1].number}.png`;
-  // let tlIconPosition = { lat: restaurants[1].lat, lng: restaurants[1].lng};
-  // let tlTagline = `<h2>${restaurants[1].name}</h2>
-  //               <h3>${restaurants[1].title}</h3>
-  //               <iframe width="320" height="auto" src="${restaurants[1].youtube}" title="Melting Spots video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  //               <p>${restaurants[1].tagline}</p>
-  //               <p><a href="https://instagram.com/${restaurants[1].instagram}" target="_blank">${restaurants[1].instagram}</a></p>`;
-  // tlIcon.classList.add("restaurant-icon");
-
-  // const tlMarkerContent = document.createElement('div');
-
-  // const tlMarkerNumber = document.createElement('div');
-  // tlMarkerNumber.textContent = restaurant.number;
-  // tlMarkerNumber.classList.add('number-icon');
-
-  // tlMarkerContent.appendChild(icon);
-  // tlMarkerContent.appendChild(markerNumber); //append icon image to marker content
-
-
-  // const tlMarker = new google.maps.marker.AdvancedMarkerElement({
-  //   position: tlIconPosition,
-  //   title: restaurants[1].name, 
-  //   map: map, 
-  //   content: tlMarkerContent,
-  // });
-
+  listItem.addEventListener("click", listClick);
+  listItem.addEventListener("touchend", listClick);
   
-  // attachDescription(tlMarker, tlTagline);
+  function listClick() {  // Add parentheses here
+    const latLng = new google.maps.LatLng(marker.position); // assumes marker is accessible in this scope
+    map.panTo(latLng);
+    openInfoWindow(map, marker);
+  }
+
+
+
+  });
+
+
 
 
 } catch (error) {
